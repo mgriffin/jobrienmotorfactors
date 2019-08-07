@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>J. O'Brien Motor Factors</title>
+    <meta name="description" content="J. O'Brien Motor Factors, Knock, Co. Mayo, Ireland">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <div id="container">
+      <h1>
+        <img src="images/small-gear.png" alt="J. O'Brien Motor Factors Logo">
+        J. O'Brien Motor Factors, Knock, Co. Mayo.
+      </h1>
+
+      <div class="business-hours">
+        <h2 class="title">Opening Hours</h2>
+        <ul class="opening-hours">
+          <li>Sunday <span class="pull-right">Closed</span></li>
+          <li>Monday <span class="pull-right">9am - 6pm</span></li>
+          <li>Tuesday <span class="pull-right">9am - 6pm</span></li>
+          <li>Wednesday <span class="pull-right">9am - 6pm</span></li>
+          <li>Thursday <span class="pull-right">9am - 6pm</span></li>
+          <li>Friday <span class="pull-right">9am - 6pm</span></li>
+          <li>Saturday <span class="pull-right">9am - 1pm</span></li>
+        </ul>
+      </div>
+      <div class="business-hours">
+        <h2 class="title">Contact</h2>
+        <p><img src="images/phone.jpg" alt="phone icon">
+        (094) 938 8211</p>
+      </div>
+    </div>
+    <script>
+el = document.querySelectorAll('ul.opening-hours li');
+day = new Date().getDay();
+el[day].className += ' ' + 'today';
+    </script>
+  </body>
+</html>

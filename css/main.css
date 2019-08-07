@@ -1,0 +1,137 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+
+/* ==========================================================================
+jobrien styles
+========================================================================== */
+
+  #container {
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  .business-hours {
+    padding: 20px 14px;
+    width: 25%;
+  }
+  .business-hours .title {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 4px solid #d9352e; 
+  }
+  .business-hours li {
+    line-height: 30px;
+    border-bottom: 1px solid #d9352e; 
+    list-style: none;
+  }
+  .business-hours li:last-child {
+    border-bottom: none; 
+  }
+  .business-hours .opening-hours li.today {
+    color: #d9352e; 
+  }
+  .pull-right {
+    float: right!important;
+  }
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+Print styles
+========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
