@@ -26,12 +26,23 @@ video {
 /* ==========================================================================
 jobrien styles
 ========================================================================== */
-
   #container {
     width: 80%;
     padding: 0 10%;
   }
 
+  header {
+    display: flex;
+    align-items: flex-start;
+  }
+  @media all and (max-width: 500px) {
+    header {
+      flex-direction: column;
+    }
+  }
+  header h1 {
+    padding: 0 10px;
+  }
   .business-hours {
     padding: 20px 14px;
     width: 300px;
