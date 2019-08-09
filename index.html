@@ -39,7 +39,10 @@
     </div>
     <script>
 el = document.querySelectorAll('ul.opening-hours li');
-day = new Date().getDay();
+day = new Date().getDay() - 1;
+if (day == -1) {
+  day = 6
+}
 el[day].className += ' ' + 'today';
     </script>
   </body>
